@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("https://source.unsplash.com/SYTO3xs06fU/");
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 4rem;
+  letter-spacing: -3px;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
+  position: relative;
+  z-index: 3;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
+  position: relative;
+  text-align: center;
+}
+
+.container {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 35rem;
+  padding: 2rem;
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+svg {
+  margin: 0 auto 50px;
+  display: block;
+}
+
+form {
+  width: 100%;
+}
+
+form input {
+  padding: 12px;
+  border: 2px solid #ccc;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+form input:focus {
+  border-color: #ff323c;
+  outline: none;
+}
+
+form button {
+  background-color: #ff323c;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  display: block;
+  text-align: left;
+  position: relative;
+  margin: 0 auto;
+}
+
+form button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  top: 8px;
+  right: 10px;
+  background-image: url("/images/button-arrow.svg");
+}
